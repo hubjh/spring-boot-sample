@@ -7,8 +7,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/{db_name}?userUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
-    username: {id}
-    password: {pw}
+    username: {spring.datasource.username}
+    password: {spring.datasource.password}
 
   jpa:
     properties:
